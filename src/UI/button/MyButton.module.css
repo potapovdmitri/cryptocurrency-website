@@ -1,0 +1,24 @@
+.myBtn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #000878 0%, #a533de 50%, #000878 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0px 3px 32px 5px rgba(74, 128, 237, 0.28);
+    transition: .5s;
+    cursor: pointer;
+  }
+
+.myBtn:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+.myBtn:active {
+    font-size: 16px;
+}

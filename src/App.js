@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/App.css"
+import { RouterProvider, createBrowserRouter, useNavigate } from "react-router-dom";
+import routing from "./router/routing";
+import ParticleBackground from './components/config/ParticleBackground';
+
 
 function App() {
+
+  const routes = routing();
+  const MyRouter = createBrowserRouter(routes)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{color:"white"}}>
+      <ParticleBackground/>
+      <RouterProvider router={MyRouter}/>
     </div>
   );
 }
